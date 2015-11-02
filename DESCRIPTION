@@ -1,0 +1,15 @@
+Package: aprofW
+Title: Light wrapper on top of the aprof package
+Version: 0.0.0.1
+Authors@R: person("Matthieu", "Bruneaux", email = "matthieu.bruneaux@gmail.com", role = c("aut", "cre"))
+Description: This package adds a few functions on top of the aprof package to
+    ease quick code profiling.
+Depends:
+    R (>= 3.2.2)
+Imports:
+    aprof,
+    base64,
+    highlight
+License: MIT
+LazyData: true
+RoxygenNote: 5.0.0
