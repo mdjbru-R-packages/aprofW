@@ -46,7 +46,7 @@ viewProfHtml(prof1)
 viewProfHtml(prof2)
 #+END_SRC
 
-Profiles can be viewed here: [[http://htmlpreview.github.com/][prof1]] and [[http://htmlpreview.github.com/ ][prof2]].
+Profiles can be viewed here: [[http://htmlpreview.github.com/?https://github.com/mdjbru-R-packages/aprofW/blob/master/f1-prof.html][prof1]] and [[http://htmlpreview.github.com/?https://github.com/mdjbru-R-packages/aprofW/blob/master/f2-prof.html][prof2]].
 
 Note that only relative run time within each profiling is displayed. In the
 case above, we can compare =f1= and =f2= using the run time for =apply(data, 1,
