@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><title>
+Aprof /tmp/RtmpYOmS6A/file2dc44554f534
+</title>
+
+<style>
+.lineNumber {text-align: center; min-width: 70px;}
+.lineNumber {font-size: 12px;}
+body {font-family: sans-serif;}
+h1 {text-align: center;}
+table {border: 1px solid black; margin-left: auto; margin-right: auto;}
+tr {line-height: 0;}
+th {background: #dddddd; height: 40px;}
+tr:nth-child(even) {background: #efefef}
+tr:nth-child(odd) {background: #fdfdfd}
+pre {padding-left: 10px;}
+pre .comment {color: green; font-weight: bold;}
+pre .symbol {color: purple; font-weight: bold;}
+pre .functioncall {color: blue; font-weight: bold;}
+pre .keyword {color: salmon; font-weight: bold;}
+pre .string {color: darkgreen; font-weight: normal;}
+pre .number {color: grey; font-weight: normal;}
+</style>
+</head>
+<body>
+<h1>Profiling results for /tmp/RtmpYOmS6A/file2dc44554f534</h1>
+<table class="profileTable">
+<tbody><tr><th>Line</th><th>Code</th><th>Execution time</th></tr>
+<tr><td class="lineNumber">1</td><td class="sourceCode"><code><pre><span class="symbol">f2</span> <span class="assignement">&lt;-</span>
+</pre></code></td><td class="executionTime"><img src="data:image/png;base64,%0AiVBORw0KGgoAAAANSUhEUgAAASwAAAAUCAMAAAAA/fAzAAAACVBMVEX+/v5kle3+/v7CAYcP%0AAAAAA3RSTlP//wDXyg1BAAAAU0lEQVRYhe3VsQ2AQAwEwTf9F00IGWz0emmmgtMG9rr4be0e%0AcBKxArECsQKxArECsYJXrJnZt+MIT6wZtT6IFYgVuFmBbxiIFYgViBWIFYgViBXcZ5AuzDfM%0AwSoAAAAASUVORK5CYII=" alt=""></td></tr>
+<tr><td class="lineNumber">2</td><td class="sourceCode"><code><pre><span class="keyword">function</span><span class="keyword">(</span><span class="keyword">)</span> <span class="keyword">{</span>
+</pre></code></td><td class="executionTime"><img src="data:image/png;base64,%0AiVBORw0KGgoAAAANSUhEUgAAASwAAAAUCAMAAAAA/fAzAAAACVBMVEX+/v5kle3+/v7CAYcP%0AAAAAA3RSTlP//wDXyg1BAAAAU0lEQVRYhe3VsQ2AQAwEwTf9F00IGWz0emmmgtMG9rr4be0e%0AcBKxArECsQKxArECsYJXrJnZt+MIT6wZtT6IFYgVuFmBbxiIFYgViBWIFYgViBXcZ5AuzDfM%0AwSoAAAAASUVORK5CYII=" alt=""></td></tr>
+<tr><td class="lineNumber">3</td><td class="sourceCode"><code><pre>    <span class="symbol">nSamples</span> <span class="assignement">=</span> <span class="number">1000</span>
+</pre></code></td><td class="executionTime"><img src="data:image/png;base64,%0AiVBORw0KGgoAAAANSUhEUgAAASwAAAAUCAMAAAAA/fAzAAAACVBMVEX+/v5kle3+/v7CAYcP%0AAAAAA3RSTlP//wDXyg1BAAAAU0lEQVRYhe3VsQ2AQAwEwTf9F00IGWz0emmmgtMG9rr4be0e%0AcBKxArECsQKxArECsYJXrJnZt+MIT6wZtT6IFYgVuFmBbxiIFYgViBWIFYgViBXcZ5AuzDfM%0AwSoAAAAASUVORK5CYII=" alt=""></td></tr>
+<tr><td class="lineNumber">4</td><td class="sourceCode"><code><pre>    <span class="symbol">nReplicates</span> <span class="assignement">=</span> <span class="number">100</span>
+</pre></code></td><td class="executionTime"><img src="data:image/png;base64,%0AiVBORw0KGgoAAAANSUhEUgAAASwAAAAUCAMAAAAA/fAzAAAACVBMVEX+/v5kle3+/v7CAYcP%0AAAAAA3RSTlP//wDXyg1BAAAAU0lEQVRYhe3VsQ2AQAwEwTf9F00IGWz0emmmgtMG9rr4be0e%0AcBKxArECsQKxArECsYJXrJnZt+MIT6wZtT6IFYgVuFmBbxiIFYgViBWIFYgViBXcZ5AuzDfM%0AwSoAAAAASUVORK5CYII=" alt=""></td></tr>
+<tr><td class="lineNumber">5</td><td class="sourceCode"><code><pre>    <span class="symbol">data</span> <span class="assignement">=</span> <span class="functioncall">replicate</span><span class="keyword">(</span><span class="argument">n</span> <span class="argument">=</span> <span class="symbol">nReplicates</span><span class="keyword">,</span>
+</pre></code></td><td class="executionTime"><img src="data:image/png;base64,%0AiVBORw0KGgoAAAANSUhEUgAAASwAAAAUCAMAAAAA/fAzAAAACVBMVEX+/v5kle3+/v7CAYcP%0AAAAAA3RSTlP//wDXyg1BAAAAUklEQVRYhe3UsQ2AMAADwcD+Q6eliES+Ckh3E1hfeNxsG6cH%0A/IlYgViBWIFYgViBWMEj1sXSKtbpTd8lViBW4LP2LQ+eN2IFYgViBWIFYgViBRMBESljwiU/%0AbwAAAABJRU5ErkJggg==" alt=""></td></tr>
+<tr><td class="lineNumber">6</td><td class="sourceCode"><code><pre>                     <span class="functioncall">rpois</span><span class="keyword">(</span><span class="symbol">nSamples</span><span class="keyword">,</span> <span class="argument">lambda</span> <span class="argument">=</span> <span class="number">20</span><span class="keyword">)</span><span class="keyword">)</span>
+</pre></code></td><td class="executionTime"><img src="data:image/png;base64,%0AiVBORw0KGgoAAAANSUhEUgAAASwAAAAUCAMAAAAA/fAzAAAACVBMVEX+/v5kle3+/v7CAYcP%0AAAAAA3RSTlP//wDXyg1BAAAAU0lEQVRYhe3VsQ2AQAwEwTf9F00IGWz0emmmgtMG9rr4be0e%0AcBKxArECsQKxArECsYJXrJnZt+MIT6wZtT6IFYgVuFmBbxiIFYgViBWIFYgViBXcZ5AuzDfM%0AwSoAAAAASUVORK5CYII=" alt=""></td></tr>
+<tr><td class="lineNumber">7</td><td class="sourceCode"><code><pre>    <span class="functioncall">apply</span><span class="keyword">(</span><span class="symbol">data</span><span class="keyword">,</span> <span class="number">1</span><span class="keyword">,</span> <span class="symbol">mean</span><span class="keyword">)</span>
+</pre></code></td><td class="executionTime"><img src="data:image/png;base64,%0AiVBORw0KGgoAAAANSUhEUgAAASwAAAAUCAMAAAAA/fAzAAAACVBMVEX+/v5kle3+/v7CAYcP%0AAAAAA3RSTlP//wDXyg1BAAAAVklEQVRYhe3VsQ2AMAwAwcD+Q1NCyUuJItDdBPYX9jh5bewe%0A4EvECsQKxArECsQKxAoesY5F9i032x1rVasf1RIrECtwswLfMBArECsQKxArECsQK7gAP1gt%0AIynJqPsAAAAASUVORK5CYII=" alt=""></td></tr>
+<tr><td class="lineNumber">8</td><td class="sourceCode"><code><pre><span class="keyword">}</span></pre></code></td><td class="executionTime"><img src="data:image/png;base64,%0AiVBORw0KGgoAAAANSUhEUgAAASwAAAAUCAMAAAAA/fAzAAAACVBMVEX+/v5kle3+/v7CAYcP%0AAAAAA3RSTlP//wDXyg1BAAAAU0lEQVRYhe3VsQ2AQAwEwTf9F00IGWz0emmmgtMG9rr4be0e%0AcBKxArECsQKxArECsYJXrJnZt+MIT6wZtT6IFYgVuFmBbxiIFYgViBWIFYgViBXcZ5AuzDfM%0AwSoAAAAASUVORK5CYII=" alt=""></td></tr>
+</tbody></table>
+
+
+</body></html>

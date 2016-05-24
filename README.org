@@ -1,0 +1,59 @@
+* aprofW: simple code profiling using Marco Visser's aprof
+
+=aprofW= is a light wrapper on top of aprof, the Amdahl's profiler for R by
+Marco Visser.
+
+** Installation
+
+#+BEGIN_SRC R
+library(devtools)
+install_github("mdjbru-R-packages/aprofW")
+#+END_SRC
+
+** Quick example
+
+The package enables to profile the code contained in a function. So if you have
+a small code snippet you want to profile, you should put it into a function
+first.
+
+See also =?aprofFun=.
+
+#+BEGIN_SRC R
+library(aprofW)
+# Function containing the code to profile
+f1 = function() {
+    nSamples = 1000
+    nReplicates = 100
+    data = rpois(nSamples, lambda = 20)
+    for (i in 2:nSamples) {
+        data = rbind(data, rpois(nSamples, lambda = 20))
+    }
+    apply(data, 1, mean)
+}
+# Another function, with better implementation
+f2 = function() {
+    nSamples = 1000
+    nReplicates = 100
+    data = replicate(n = nReplicates, 
+                     rpois(nSamples, lambda = 20))
+    apply(data, 1, mean)
+}
+# Profiling
+prof1 = aprofFun(f1(), "f1")
+prof2 = aprofFun(f2(), "f2")
+# View the results
+viewProfHtml(prof1)
+viewProfHtml(prof2)
+#+END_SRC
+
+Profiles can be viewed here: [[http://htmlpreview.github.com/][prof1]] and [[http://htmlpreview.github.com/ ][prof2]].
+
+Note that only relative run time within each profiling is displayed. In the
+case above, we can compare =f1= and =f2= using the run time for =apply(data, 1,
+mean)= as a reference, since this call should take the same time between the
+two implementations.
+
+Finally, note that when a function call is split over several lines in the
+source (like the =replicate= call for =f2=), the run time is displayed on the
+first line of the function call.
+
