@@ -1,6 +1,6 @@
 * aprofW: simple code profiling using Marco Visser's aprof
 
-=aprofW= is a light wrapper on top of aprof, the Amdahl's profiler for R by
+=aprofW= is a light wrapper on top of =aprof=, the Amdahl's profiler for R by
 Marco Visser.
 
 ** Installation
